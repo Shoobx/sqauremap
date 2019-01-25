@@ -305,7 +305,7 @@ class SquareMap( wx.Panel ):
             else:
                 dc.DrawRoundedRectangle( dx,dy,dw,dh, self.padding )
         else:
-            dc.DrawRoundedRectangle( dx,dy,dw,dh, self.padding*3 )
+            dc.DrawRectangle( dx,dy,dw,dh )
 #        self.DrawIconAndLabel(dc, node, x, y, w, h, depth)
         children_hot_map = []
         hot_map.append( (wx.Rect( int(x),int(y),int(w),int(h)), node, children_hot_map ) )
